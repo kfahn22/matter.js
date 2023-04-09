@@ -2,7 +2,7 @@
 // Syntax from 15.8 Matter.js tutorial
 // https://www.youtube.com/watch?v=uITcoKpbQq4
 
-// Note that Composite must be used instead of 
+
 let Engine = Matter.Engine,
     World = Matter.World,
     Bodies = Matter.Bodies,

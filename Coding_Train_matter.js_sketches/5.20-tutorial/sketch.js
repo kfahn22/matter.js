@@ -1,9 +1,7 @@
 // Coding Train / Daniel Shiffman
-
 // https://www.youtube.com/watch?v=szztTszPp-8
 
 // Note that the syntax has been updated to use object destructuring
-// Note that we use Composite to add elements 
 
 const {
     Engine,
@@ -11,7 +9,6 @@ const {
     Bodies,
     Constraint
 } = Matter;
-
 
 let engine;
 let world;
