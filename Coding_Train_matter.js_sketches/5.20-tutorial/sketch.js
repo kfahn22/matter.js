@@ -4,12 +4,11 @@
 
 // Note that the syntax has been updated to use object destructuring
 // Note that we use Composite to add elements 
+
 const {
     Engine,
     World,
     Bodies,
-    Runner,
-    Composite,
     Constraint
 } = Matter;
 
@@ -24,7 +23,7 @@ function setup() {
     // create an engine
     engine = Engine.create();
     world = engine.world;
-    //Engine.run(engine)
+    
     let prev = null;
     for (let x = 200; x < 400; x += 20) {
         let fixed = false;
@@ -52,10 +51,6 @@ function setup() {
     }
     boundaries.push(new Boundary(width / 2, 400, width, 20, 0));
 }
-
-// function mouseDragged() {
-//     particles.push(new Particle(200, 50, random(5, 10)));
-// }
 
 function draw() {
     background(51);

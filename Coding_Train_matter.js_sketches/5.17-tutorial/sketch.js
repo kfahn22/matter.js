@@ -4,7 +4,8 @@
 
 // Note that the syntax has been updated to use object destructuring
 // Note that we use Composite to add elements 
-const { Engine, World, Bodies, Composite } = Matter;
+
+const { Engine, World, Bodies } = Matter;
 
 let engine;
 let world;
@@ -18,7 +19,7 @@ function setup() {
     world = engine.world;
     Engine.run(engine);
     ground = new Boundary(200, height, width, 100);
-    Composite.add(world, ground);
+    World.add(world, ground);
 
 }
     

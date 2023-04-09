@@ -10,7 +10,7 @@ class Boundary {
             isStatic: true
         }
         this.body = Bodies.rectangle(this.x, this.y, this.w, this.h, options);
-        Composite.add(world, this.body);
+        World.add(world, this.body);
     }
 
     show() {
