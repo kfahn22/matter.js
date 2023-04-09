@@ -11,7 +11,7 @@ class Boundary {
             isStatic: true
         }
         this.body = Bodies.rectangle(this.x, this.y, this.w, this.h, options);
-        Composite.add(world, this.body);
+        World.add(world, this.body);
     }
 
     show() {
@@ -21,6 +21,7 @@ class Boundary {
         translate(pos.x, pos.y);
         rotate(angle);
         rectMode(CENTER);
+        noStroke();
         fill(0);
         rect(0, 0, this.w, this.h);
         pop();
