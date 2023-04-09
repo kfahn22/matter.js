@@ -27,7 +27,7 @@ function setup() {
         if (!prev) {
             fixed = true;
         }
-        let p = new Particle(x, 100, 5, fixed);
+        let p = new Particle(x, 100, 10, fixed);
         particles.push(p);
         //let p2 = new Particle(200, 150, 10);
         //particles.push(p1);
