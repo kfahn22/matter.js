@@ -10,7 +10,7 @@ class Box {
         }
         this.body = Bodies.rectangle(this.x, this.y, this.w, this.h, options);
         
-        World.add(world, this.body);
+        Composite.add(world, this.body);
     }
 
     show() {

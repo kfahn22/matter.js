@@ -9,7 +9,7 @@ class Particle{
             isStatic: fixed
         }
         this.body = Bodies.circle(this.x, this.y, this.r,  options);
-        World.add(world, this.body);
+        Composite.add(world, this.body);
     }
 
     show() {

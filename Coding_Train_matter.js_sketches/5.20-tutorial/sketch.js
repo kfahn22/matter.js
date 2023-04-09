@@ -7,6 +7,7 @@ const {
     Engine,
     World,
     Bodies,
+    Composite,
     Constraint
 } = Matter;
 

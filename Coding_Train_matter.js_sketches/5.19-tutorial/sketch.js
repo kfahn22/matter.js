@@ -3,7 +3,7 @@
 // https://www.youtube.com/watch?v=szztTszPp-8
 
 // Note that the syntax has been updated to use object destructuring
-const { Engine, World, Bodies } = Matter;
+const { Engine, World, Bodies, Composite } = Matter;
 
 let engine;
 let world;

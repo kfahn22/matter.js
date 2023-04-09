@@ -8,7 +8,7 @@ class Circle {
             restitution: 0.6
         }
         this.body = Bodies.circle(this.x, this.y, this.r, options);
-        World.add(world, this.body);
+        Composite.add(world, this.body);
     }
 
     isOffScreen() {
@@ -17,7 +17,7 @@ class Circle {
     }
 
     removeFromWorld() {
-        World.remove(world, this.body)
+        Composite.remove(world, this.body)
     }
     
     show() {

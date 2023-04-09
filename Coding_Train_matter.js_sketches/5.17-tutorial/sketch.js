@@ -9,7 +9,7 @@
     
 
 // Note that the syntax has been updated to use object destructuring
-const { Engine, World, Bodies } = Matter;
+const { Engine, World, Bodies, Composite } = Matter;
 
 let engine;
 let world;
@@ -21,9 +21,8 @@ function setup() {
     // create an engine
     engine = Engine.create();
     world = engine.world;
-    Engine.run(engine);
     ground = new Boundary(200, height, width, 100);
-    World.add(world, ground);
+    Composite.add(world, ground);
 
 }
     
