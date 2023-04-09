@@ -15,10 +15,7 @@ function setup() {
     engine = Engine.create();
     world = engine.world;
     Engine.run(engine);
-    let options = {
-        isStatic: true
-    }
-    ground = Bodies.rectangle(200, height, width, 100, options);
+    ground = new Boundary(200, height, width, 100);
     Composite.add(world, ground);
 
 }
@@ -29,10 +26,9 @@ function mousePressed() {
 
 function draw() {
     background(51);
+    Engine.update(engine);
     for (let i = 0; i < boxes.length; i++) {
         boxes[i].show();
     }
-    fill(170);
-    rectMode(CENTER);
-    rect(ground.position.x, ground.position.y, width, 100);
+    ground.show();
 }
