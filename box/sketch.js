@@ -1,8 +1,8 @@
-let Engine = Matter.Engine,
-    World = Matter.World,
-    //Runner = Matter.Runner,
-    Bodies = Matter.Bodies;
-    Composite = Matter.Composite;
+// Coding Train / Daniel Shiffman
+
+// Note that the syntax has been updated to use object destructuring
+// Note that we use Composite to add elements 
+const { Engine, World, Bodies, Composite } = Matter;
 
 let engine;
 let world;
