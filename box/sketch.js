@@ -1,4 +1,6 @@
 // Coding Train / Daniel Shiffman
+// Code accompanying 15.7 Matter.js tutorial 
+// Youtube: https://www.youtube.com/watch?v=urR596FsU68
 
 // Note that the syntax has been updated to use object destructuring
 // Note that we use Composite to add elements 

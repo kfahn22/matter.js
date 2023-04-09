@@ -1,7 +1,11 @@
+// Coding Train / Daniel Shiffman
+// Syntax from 15.8 Matter.js tutorial
+// https://www.youtube.com/watch?v=uITcoKpbQq4
+
+// Note that Composite must be used instead of 
 let Engine = Matter.Engine,
     World = Matter.World,
-    //Runner = Matter.Runner,
-    Bodies = Matter.Bodies;
+    Bodies = Matter.Bodies,
     Composite = Matter.Composite;
 
 let engine;
@@ -11,13 +15,13 @@ let boundaries = [];
 
 function setup() {
     createCanvas(400, 400);
-    // create an engine
+
+    // Create an engine
     engine = Engine.create();
     world = engine.world;
     //Engine.run(engine);
     boundaries.push(new Boundary(150, 100, width* 0.6, 20, 0.3));
-    boundaries.push(new Boundary(250, 300, width* 0.6, 20, -0.3));
-   
+    boundaries.push(new Boundary(250, 300, width* 0.6, 20, -0.3)); 
 }
     
 function mouseDragged() {
@@ -33,5 +37,4 @@ function draw() {
     for (let i = 0; i < boundaries.length; i++) {
         boundaries[i].show();
     }
-   
 }
