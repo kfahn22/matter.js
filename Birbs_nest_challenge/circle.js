@@ -1,4 +1,4 @@
-class Particle{
+class Circle{
     constructor(x, y, r, fixed) {
         this.x = x;
         this.y = y;
@@ -20,8 +20,8 @@ class Particle{
         rotate(angle);
         rectMode(CENTER);
         strokeWeight(1);
-        stroke(255)
-        fill(127);
+        stroke(255, 159, 28)
+        fill(255, 159, 28);
         ellipse(0, 0, this.r*2);
         line(0,0,this.r,0);
         pop();
